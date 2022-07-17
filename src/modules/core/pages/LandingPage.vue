@@ -3,4 +3,6 @@
 
 <template>
   <home-section />
+  <about-section />
+  <skill-section />
 </template>

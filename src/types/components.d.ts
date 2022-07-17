@@ -5,13 +5,17 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AboutSection: typeof import('./../modules/core/components/sections/AboutSection.vue')['default']
     App: typeof import('./../App.vue')['default']
     BannerContent: typeof import('./../modules/core/components/banners/BannerContent.vue')['default']
     BannerImage: typeof import('./../modules/core/components/banners/BannerImage.vue')['default']
     ContactInfo: typeof import('./../globals/layouts/default/components/header/ContactInfo.vue')['default']
     DefaultLayout: typeof import('./../globals/layouts/default/layout/DefaultLayout.vue')['default']
+    DownloadCVButton: typeof import('./../modules/core/components/buttons/DownloadCVButton.vue')['default']
     Header: typeof import('./../globals/layouts/default/components/header/Header.vue')['default']
     HomeSection: typeof import('./../modules/core/components/sections/HomeSection.vue')['default']
+    InformationItem: typeof import('./../modules/core/components/information/InformationItem.vue')['default']
+    InformationList: typeof import('./../modules/core/components/information/InformationList.vue')['default']
     LandingPage: typeof import('./../modules/core/pages/LandingPage.vue')['default']
     Loader: typeof import('./../globals/layouts/default/components/Loader.vue')['default']
     NavBar: typeof import('./../globals/layouts/default/components/header/navbar/NavBar.vue')['default']
@@ -21,6 +25,9 @@ declare module '@vue/runtime-core' {
     PageContent: typeof import('./../globals/layouts/default/components/PageContent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SkillItem: typeof import('./../modules/core/components/skills/SkillItem.vue')['default']
+    SkillList: typeof import('./../modules/core/components/skills/SkillList.vue')['default']
+    SkillSection: typeof import('./../modules/core/components/sections/SkillSection.vue')['default']
     SocialIcons: typeof import('./../globals/layouts/default/components/header/SocialIcons.vue')['default']
   }
 }
