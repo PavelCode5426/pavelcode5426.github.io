@@ -5,7 +5,7 @@ export interface SiteStore {
 }
 
 export const initialState: SiteStore = {
-  isLoading: false,
+  isLoading: true,
 }
 
 const siteStore = defineStore('site', {

@@ -14,10 +14,10 @@ PAGE JS
 	/*===================================*
 	01. LOADING JS
 	/*===================================*/
-	$(window).on('load', function() {
-		var preLoder = $(".preloader");
-		preLoder.delay(700).fadeOut(500);
-	});
+	// $(window).on('load', function() {
+	// 	var preLoder = $(".preloader");
+	// 	preLoder.delay(700).fadeOut(500);
+	// });
 
 	/*===================================*
 	02. SMOOTH SCROLLING JS
