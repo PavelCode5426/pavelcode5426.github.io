@@ -6,7 +6,9 @@ const { href, customClass, name } = defineProps<NavLinkProps>()
 
 <template>
   <li class="dropdown">
-    <a class="dropdown-toggle nav-link page-scroll" :href="href" data-toggle="dropdown" :class="customClass">{{ name }}</a>
+    <a class="dropdown-toggle nav-link page-scroll" :href="href" data-toggle="dropdown" :class="customClass">
+      {{ name }}
+    </a>
     <div class="dropdown-menu dropdown-reverse">
       <ul>
         <slot />

@@ -2656,6 +2656,7 @@ header.sidebar_menu .bottom_content {
 }
 .portfolio_item a {
 	display: block;
+	cursor: pointer;
 }
 .portfolio_style1 .portfolio_content {
     bottom: 0;
@@ -2796,7 +2797,7 @@ header.sidebar_menu .bottom_content {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-.link_container a {
+.link_container a,.link_container a:not([href]) {
 	background-color: #fff;
 	border: 2px solid #fff;
     color: #27E278;
@@ -2813,17 +2814,17 @@ header.sidebar_menu .bottom_content {
     position: relative;
     left: 2px;
 }
-.link_container a:hover {
+.link_container a:hover,.link_container a:not([href]):hover  {
 	background-color: transparent;
 	color: #fff;
 }
 .link_container {
     margin-bottom: 10px;
 }
-.portfolio_content h5 a {
+.portfolio_content h5{
     font-weight: bold;
 }
-.portfolio_content h5 a,
+.portfolio_content h5,
 .portfolio_content p {
 	color: #fff;
 }

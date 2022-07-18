@@ -6,7 +6,7 @@ const routeModules = import.meta.globEager('/src/globals/layouts/**/*.routes.ts'
 const routes: RouteRecordRaw[] = getRoutes(routeModules)
 
 const router: RouterOptions = {
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes,
   strict: true,
 }

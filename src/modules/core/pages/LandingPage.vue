@@ -2,7 +2,8 @@
 </script>
 
 <template>
-  <home-section />
-  <about-section />
-  <skill-section />
+  <home-section id="home" />
+  <about-section id="about" />
+  <portofolio-section id="portofolio" />
+  <skill-section id="skill" />
 </template>

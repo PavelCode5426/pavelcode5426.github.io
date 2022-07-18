@@ -3,12 +3,12 @@ import { skills } from '~/data'
 </script>
 
 <template>
-  <section class="counter_wrap bg_black4">
+  <section class="counter_wrap bg_black3">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-7 col-md-9 text-center">
           <div class="heading_s1 heading_light animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-            <h2>Mis Habilidades</h2>
+            <h2>Habilidades</h2>
           </div>
           <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s">
             TExto de habilidades

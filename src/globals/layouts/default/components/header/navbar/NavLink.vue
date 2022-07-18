@@ -6,6 +6,8 @@ const { href, customClass, name } = defineProps<NavLinkProps>()
 
 <template>
   <li>
-    <a class="nav-link page-scroll" :href="href" :class="customClass">{{ name }}</a>
+    <a class="nav-link page-scroll" :href="href" :class="customClass">
+      {{ name }}
+    </a>
   </li>
 </template>

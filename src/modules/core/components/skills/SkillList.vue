@@ -1,7 +1,7 @@
 <template>
   <div class="skills skills_list_type">
     <slot>
-      Sin Habilidades
+      <empty-content />
     </slot>
   </div>
 </template>

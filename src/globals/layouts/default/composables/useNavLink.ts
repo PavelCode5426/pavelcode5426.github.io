@@ -1,6 +1,6 @@
 export interface NavLinkProps {
   href: {
-    type: String
+    type: string
     default: '#'
   }
   customClass: {

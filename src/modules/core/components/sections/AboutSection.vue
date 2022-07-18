@@ -26,6 +26,8 @@ import { personalInformation } from '~/data'
               <information-item label="Correo" :value="personalInformation.email" />
               <information-item label="Fecha de Nacimiento" :value="personalInformation.birthdate" />
             </information-list>
+            <br>
+            <social-medias />
           </div>
         </div>
       </div>
