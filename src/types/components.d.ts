@@ -25,6 +25,7 @@ declare module '@vue/runtime-core' {
     NavBarLogo: typeof import('./../globals/layouts/default/components/header/navbar/NavBarLogo.vue')['default']
     NavDropdownLink: typeof import('./../globals/layouts/default/components/header/navbar/NavDropdownLink.vue')['default']
     NavLink: typeof import('./../globals/layouts/default/components/header/navbar/NavLink.vue')['default']
+    Page404: typeof import('./../modules/core/pages/Page404.vue')['default']
     PageContent: typeof import('./../globals/layouts/default/components/PageContent.vue')['default']
     PortofolioSection: typeof import('./../modules/core/components/sections/PortofolioSection.vue')['default']
     ProjectDetailsModal: typeof import('./../modules/core/components/portofolio/projects/ProjectDetailsModal.vue')['default']

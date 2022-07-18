@@ -9,8 +9,6 @@ export const install: UserModule = async () => {
   await load_script('assets/js/magnific-popup.min.js')
   await load_script('assets/js/waypoints.min.js')
   await load_script('assets/js/parallax.js')
-  await load_script('assets/js/parallax.js')
-  await load_script('assets/js/parallax.js')
   await load_script('assets/js/jquery.countdown.min.js')
   await load_script('assets/js/jquery.counterup.min.js')
   await load_script('assets/js/imagesloaded.pkgd.min.js')
