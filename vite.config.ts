@@ -12,6 +12,7 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import VueTypeImports from 'vite-plugin-vue-type-imports'
+import { imagetools } from 'vite-imagetools'
 import LinkAttributes from 'markdown-it-link-attributes'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
@@ -125,7 +126,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-inspect
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
-
+    imagetools(),
   ],
 
   // https://github.com/antfu/vite-ssg

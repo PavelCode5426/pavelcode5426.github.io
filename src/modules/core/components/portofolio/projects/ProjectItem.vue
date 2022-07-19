@@ -17,7 +17,7 @@ const { asClass: literalCategoriesClass, asNames: literalCategoriesNames } = lit
   <li class="grid_item" :class="literalCategoriesClass">
     <div class="portfolio_item">
       <a href="#" class="image_link">
-        <img :src="photos[0]" alt="image">
+        <lazy-img :data-src="photos[0]" />
       </a>
       <div class="portfolio_content">
         <div class="link_container">

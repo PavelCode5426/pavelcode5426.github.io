@@ -1,6 +1,6 @@
 export default class PersonalInformation {
   public name: String
-  public photos: [String, String]
+  public photos: [String, String] // PORTADA Y SOBRE MI
   public professions: String[]
   public presentationPhrase: String
   public aboutMe: String

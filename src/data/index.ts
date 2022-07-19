@@ -6,7 +6,7 @@ import Project from '~/data/models/Project'
 
 export const personalInformation: PersonalInformation = {
   name: 'Pavel Perez',
-  photos: ['assets/images/pavel/IMG_3379.jpg', 'assets/images/pavel/IMG_20220717.jpg'],
+  photos: ['assets/images/me/portal.jpg', 'assets/images/me/about.jpg'],
   professions: [
     'Desarrollador Backend',
     'Desarrollador Frontend',

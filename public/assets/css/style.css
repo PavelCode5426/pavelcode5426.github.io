@@ -2892,7 +2892,7 @@ header.sidebar_menu .bottom_content {
 	left: 50%;
 	width: 24px;
 	height: 24px;
-	background: url(../images/loading.gif) center center no-repeat;
+	background: url(../images/theme/loading.gif) center center no-repeat;
 	text-align: center;
 	margin-top: -12px;
 	margin-left: -12px;
@@ -3831,13 +3831,13 @@ select[multiple] option {
     left: 0;
     top: 0;
     right: 0;
-    background-image: url("../images/wave_shape2.png");
+    background-image: url("../images/theme/wave_shape2.png");
 	height: 120px;
 	background-position: top center;
 	background-repeat: no-repeat;
 }
 .shape_dark:before {
-	background-image: url("../images/wave_shape4.png");
+	background-image: url("../images/theme/wave_shape4.png");
 }
 .footer_shape .top_footer {
     padding-top: 180px;

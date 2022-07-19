@@ -23,7 +23,7 @@ export default class Project {
     const projectPhotos: String[] = []
     const allPhotos = import.meta.globEager('/**/projects/**/*.png')
     Object.keys(allPhotos).forEach((item) => {
-      if (item.includes(folderInProjectDir)) {
+      if (item.includes(folderInProjectDir) && !item.includes('-small')) {
         let photoDir = allPhotos[item].default as string
         photoDir = photoDir.replace('/public/', '')
         projectPhotos.push(photoDir)

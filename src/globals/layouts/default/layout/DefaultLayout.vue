@@ -5,12 +5,12 @@ import SiteStore from '~/globals/stores/site.store'
 const siteStore = SiteStore()
 const { isLoading } = storeToRefs(siteStore)
 
-setTimeout(() => isLoading.value = false, 1000)
+onMounted(() => setTimeout(() => isLoading.value = false, 400))
 </script>
 
 <template>
   <transition>
-    <loader v-if="isLoading" />
+    <loading-page v-if="isLoading" />
   </transition>
   <Header />
   <page-content />

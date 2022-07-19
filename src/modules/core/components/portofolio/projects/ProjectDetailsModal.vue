@@ -24,7 +24,7 @@ const { asNames: literalCategoriesNames } = literalCategories(categories)
             <div class="col-lg-8">
               <div class="carousel_slider owl-carousel owl-theme" data-margin="20" data-dots="false" data-loop="true" data-nav="true" data-autoplay="true" data-items="1">
                 <div v-for="photo in photos" class="item">
-                  <img :src="photo">
+                  <lazy-img :data-src="photo" />
                 </div>
               </div>
             </div>
