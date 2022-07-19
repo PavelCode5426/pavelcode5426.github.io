@@ -34,4 +34,20 @@ onMountedHook()
 </template>
 
 <style scoped>
+@keyframes activate-blur{
+  0% {filter: blur(0px);}
+  100% {filter: blur(4px);}
+}
+@keyframes desactivate-blur{
+  0% {filter: blur(4px);}
+  100% {filter: blur(0px);}
+}
+
+.lazyLoad:not([data-loaded="true"]){
+  filter: blur(4px);
+}
+.lazyLoad[data-loaded="true"]{
+  display: inline;
+  animation: desactivate-blur 1.5s;
+}
 </style>
