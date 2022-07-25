@@ -4776,3 +4776,27 @@ iframe {
 	border-radius: 3px;
 	margin-top: 10px;
 }
+
+
+/*===================================*
+  19. CUSTOM DESING
+*===================================*/
+@keyframes activate-blur{
+	0% {filter: blur(0px);}
+	100% {filter: blur(4px);}
+}
+@keyframes desactivate-blur{
+	0% {filter: blur(4px);}
+	100% {filter: blur(0px);}
+}
+
+.lazyLoad:not([loaded]){
+	filter: blur(4px);
+}
+.lazyLoad[loaded]{
+	display: inline;
+	animation: desactivate-blur 2.5s;
+}
+.link-cursor{
+	cursor: pointer;
+}

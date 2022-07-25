@@ -53,11 +53,20 @@ export default class LazyLoad {
     if (element instanceof HTMLImageElement) {
       const image = new Image()
       image.src = element.getAttribute('data-src')
-      // image.onload = () => setTimeout(() => element.setAttribute('src', image.src), 5000)
-      image.onload = () => element.setAttribute('src', image.src)
+      if (image.src) {
+        image.onload = () => {
+          element.setAttribute('src', image.src)
+          /*
+          UTILIZO ESTO PORQUE EN CASO DE LA IMAGEN CONTAR CON UN SRC EL DATA-LOADED YA ESTA EN TRUE
+          POR LO TANTO ESTOY PONINEDO MI PROPIO ATRIBUTO PARA EVITAR ERRORES
+           */
+          element.setAttribute('loaded', 'true')
+        }
+      }
 
       const srcset = element.getAttribute('data-srcset')
-      element.setAttribute('src', srcset)
+      if (srcset)
+        element.setAttribute('src', srcset)
     }
   }
 

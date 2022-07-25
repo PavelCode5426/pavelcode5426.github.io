@@ -7,8 +7,9 @@
     <ul class="navbar-nav">
       <nav-link name="Inicio" href="#home" />
       <nav-link name="Sobre mi" href="#about" />
-      <nav-link name="Portafolio" href="#portofolio" />
       <nav-link name="Experiencia" href="#skill" />
+      <nav-link name="Portafolio" href="#portofolio" />
+      <!--      <nav-link name="Resumen" href="#resumen" /> -->
 
       <nav-dropdown-link name="Idioma">
         <nav-link name="Español" />

@@ -5,7 +5,9 @@ import SiteStore from '~/globals/stores/site.store'
 const siteStore = SiteStore()
 const { isLoading } = storeToRefs(siteStore)
 
-onMounted(() => setTimeout(() => isLoading.value = false, 400))
+onMounted(() => {
+  jQuery(window).on('load', () => setTimeout(() => isLoading.value = false, 400))
+})
 </script>
 
 <template>
@@ -19,7 +21,7 @@ onMounted(() => setTimeout(() => isLoading.value = false, 400))
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 700ms ease;
 }
 
 .v-enter-from,

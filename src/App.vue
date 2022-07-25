@@ -7,7 +7,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'description of the site',
+      content: 'Portafolio de PavelCode',
     },
   ],
   link: [

@@ -15,16 +15,12 @@ const { asClass: literalCategoriesClass, asNames: literalCategoriesNames } = lit
 
 <template>
   <li class="grid_item" :class="literalCategoriesClass">
-    <div class="portfolio_item">
-      <a href="#" class="image_link">
+    <div class="portfolio_item link-cursor" @click="emit('onPreviewClick')">
+      <a class="image_link">
         <lazy-img :data-src="photos[0]" />
       </a>
       <div class="portfolio_content">
-        <div class="link_container">
-          <a :href="photos[0]" class="image_popup"><i class="ion-image" /></a>
-          <a @click="emit('onPreviewClick')"><i class="ion-plus" /></a>
-        </div>
-        <h5><a @click="emit('onPreviewClick')">{{ name }}</a></h5>
+        <h5>{{ name }}</h5>
         <p>{{ literalCategoriesNames }}</p>
       </div>
     </div>

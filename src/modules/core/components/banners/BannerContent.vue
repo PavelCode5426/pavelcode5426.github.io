@@ -13,7 +13,7 @@ import { personalInformation } from '~/data'
     <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">
       Soy <span id="typed-text" class="text_default" />
     </h4>
-    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+    <p class="animation text-justify" data-animation="fadeInUp" data-animation-delay="0.04s">
       {{ personalInformation.presentationPhrase }}
     </p>
     <download-c-v-button />

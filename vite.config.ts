@@ -92,8 +92,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'PavelCode´s Portofolio',
-        short_name: 'PavelCode´s Portofolio',
+        name: 'PavelCode',
+        short_name: 'PavelCode',
         theme_color: '#9e0000',
         icons: [
           {

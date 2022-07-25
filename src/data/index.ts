@@ -41,6 +41,7 @@ export const skills: Skill[] = [
   { name: 'Boostrap', percent: 80 },
   { name: 'Tailwind CSS', percent: 75 },
   { name: 'jQuery', percent: 75 },
+  { name: 'Git', percent: 75 },
   { name: 'REST Services', percent: 90 },
 ]
 
@@ -56,15 +57,42 @@ export const projectCategories: Category[] = [
   { id: 'frontend', name: 'Frontend' },
   { id: 'wordpress', name: 'WordPress' },
   { id: 'woocommerce', name: 'Woocommerce' },
+  { id: 'elearning', name: 'E-Learning' },
+  { id: 'laravel', name: 'Laravel' },
 ]
 
 export const projects: Project[] = [
   new Project(
-    [projectCategories[0], projectCategories[1], projectCategories[2]],
+    [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[3]],
     'Familia Velazquez',
     'Rafael Castillo',
     'Diciembre 2020',
     'https://www.familia-velazquez.com',
-    'Texto del Proyecto',
+    '...',
   ),
+  new Project(
+    [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[4]],
+    'Frateli',
+    undefined,
+    'Noviembre 2021',
+    undefined,
+    '...',
+  ),
+  new Project(
+    [projectCategories[0], projectCategories[5]],
+    'Stamina Investments',
+    undefined,
+    'Mayo 2022',
+    'https://www.staminainvestment.com',
+    '...',
+  ),
+  new Project(
+    [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[3]],
+    'Xprobots',
+    'Rafael Castillo',
+    'Enero 2022',
+    'https://www.xprobots.com',
+    '...',
+  ),
+
 ]

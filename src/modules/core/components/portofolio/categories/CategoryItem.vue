@@ -2,20 +2,18 @@
 import type Category from '~/data/models/Category'
 
 interface CategoryProps {
-  category: { type: Category }
+  category: Category
   isCurrent: { type: Boolean;default: false }
 }
 
 const props = defineProps<CategoryProps>()
-const { id, name } = props.category
 
-let literalID = '*'
-if (id !== '*')
-  literalID = `.${id}`
+const { id, name } = props.category
+const literalID = id === '*' ? id : `.${id}`
 </script>
 
 <template>
   <li>
-    <a href="#" :class="{ current: isCurrent }" :data-filter="literalID">{{ name }}</a>
+    <a href="#" class="mx-1" :class="{ current: isCurrent }" :data-filter="literalID">{{ name }}</a>
   </li>
 </template>
