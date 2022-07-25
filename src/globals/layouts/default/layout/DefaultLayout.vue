@@ -6,7 +6,7 @@ const siteStore = SiteStore()
 const { isLoading } = storeToRefs(siteStore)
 
 onMounted(() => {
-  jQuery(window).on('load', () => setTimeout(() => isLoading.value = false, 400))
+  window.addEventListener('load', () => setTimeout(() => isLoading.value = false, 400))
 })
 </script>
 
