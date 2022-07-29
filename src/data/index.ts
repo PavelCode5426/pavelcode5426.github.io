@@ -14,7 +14,7 @@ export const personalInformation: PersonalInformation = {
     'Desarrollador WordPress',
     'Freelancer',
   ],
-  presentationPhrase: '',
+  presentationPhrase: 'Mi objetivo profesional es mantener un crecimiento continuo en mi vida laboral y conocimientos.',
   aboutMe: 'Soy una persona organizada y muy motivada, puedo adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y promover valores como el compañerismo.',
   email: 'perezpavel5426@gmail.com',
   phone: '+53 54266836',
