@@ -14,8 +14,12 @@ export const personalInformation: PersonalInformation = {
     'Desarrollador WordPress',
     'Freelancer',
   ],
-  presentationPhrase: 'Mi objetivo profesional es mantener un crecimiento continuo en mi vida laboral y conocimientos.',
-  aboutMe: 'Soy una persona organizada y muy motivada, puedo adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y promover valores como el compañerismo.',
+  presentationPhrase: '',
+  aboutMe: 'Soy un estudiante de Ingenieria de Software del Instituto Superior Politecnico Jose Antonio Echeverria. '
+      + 'Durante estos años me preparé con las tecnologías de <strong>Desarrollo Web</strong>. '
+      + 'En mi práctica profesional, he desarrollado un sistema para la Gestion de la Cantera Joven de la Universidad. '
+      + 'También trabajé como freelance para mejorar mis habilidades y experiencia. '
+      + 'Mi objetivo es mantener un crecimiento continuo en mi vida profesional y conocimiento.',
   email: 'perezpavel5426@gmail.com',
   phone: '+53 54266836',
   birthdate: '21 de Diciembre de 1999',

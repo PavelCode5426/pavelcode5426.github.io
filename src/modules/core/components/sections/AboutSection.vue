@@ -16,9 +16,7 @@ import { personalInformation } from '~/data'
           <div class="heading_s1 mb-3 heading_light">
             <h2>Sobre Mi</h2>
           </div>
-          <p class="text-white text-justify">
-            {{ personalInformation.aboutMe }}
-          </p>
+          <p class="text-white text-justify" v-html="personalInformation.aboutMe" />
           <hr>
           <information-list>
             <information-item label="Teléfono" :value="personalInformation.phone" />
