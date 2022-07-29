@@ -4800,3 +4800,18 @@ iframe {
 .link-cursor{
 	cursor: pointer;
 }
+
+div[class*='timeline'] *:not(span){
+	color: white !important;
+}
+div[class*='timeline'] hr {
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+*.scroll-bar{
+	max-height: 65vh
+}
+
+.nav-link {
+	cursor: pointer;
+}

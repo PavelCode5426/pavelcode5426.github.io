@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { literalCategories, makeid, updateCarousel } from '~/helpers/utils'
 import type Project from '~/data/models/Project'
+import SliderItemCarousel from '~/modules/core/components/shared/carousel/SliderItemCarousel.vue'
+import SliderCarousel from '~/modules/core/components/shared/carousel/SliderCarousel.vue'
 
 interface ProjectDetailsModal {
   project: Project
@@ -31,11 +33,11 @@ onBeforeUpdate(() => {
   <portofolio-modal id="project_modal">
     <div class="row">
       <div class="col-lg-8">
-        <carousel-slider :id="carouselID" data-margin="20" data-dots="true" data-loop="true" data-nav="true" data-autoplay="true" data-items="1">
-          <carousel-slider-item v-for="photo in project.photos">
+        <slider-carousel :id="carouselID" data-margin="20" data-dots="true" data-loop="true" data-nav="true" data-autoplay="true" data-items="1">
+          <slider-item-carousel v-for="photo in project.photos">
             <lazy-img :data-src="photo" />
-          </carousel-slider-item>
-        </carousel-slider>
+          </slider-item-carousel>
+        </slider-carousel>
       </div>
       <div class="col-lg-4">
         <ul class="list_none portfolio_info_box pr_info_text_white">

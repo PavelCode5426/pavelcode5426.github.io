@@ -6,4 +6,5 @@
   <about-section id="about" />
   <skill-section id="skill" />
   <portofolio-section id="portofolio" />
+  <resume-section id="resume" />
 </template>

@@ -3,7 +3,7 @@ import { skills } from '~/data'
 </script>
 
 <template>
-  <section-container class="counter_wrap bg_black4" title="Habilidades" description="...">
+  <section-container class="counter_wrap bg_black4" title="Habilidades">
     <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.04s">
       <div class="col-md-12">
         <skill-list>

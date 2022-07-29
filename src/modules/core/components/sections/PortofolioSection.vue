@@ -9,7 +9,7 @@ function previewProject(index: number) {
 </script>
 
 <template>
-  <section-container class="bg_black3" title="Proyectos" description="...">
+  <section-container class="bg_black3" title="Proyectos">
     <div class="row">
       <div class="col-12">
         <div class="cleafix small_divider" />
@@ -29,6 +29,6 @@ function previewProject(index: number) {
         </project-list>
       </div>
     </div>
+    <project-details-modal v-if="selectedProject" :project="selectedProject" @closeModal="selectedProject = undefined" />
   </section-container>
-  <project-details-modal v-if="selectedProject" :project="selectedProject" @closeModal="selectedProject = undefined" />
 </template>

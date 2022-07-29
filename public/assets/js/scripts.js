@@ -418,5 +418,12 @@ PAGE JS
 	$(window).on('load', function() {
         $('.parallax_bg').parallaxBackground();
 	});
+
+
+	const timelineContainers = $('.scroll-bar')
+	if (timelineContainers.length)
+		timelineContainers.mCustomScrollbar({
+
+		})
 	
 })(jQuery);

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import SiteStore from '~/globals/stores/site.store'
+import Footer from '~/globals/layouts/default/components/footer/Footer.vue'
 
 const siteStore = SiteStore()
 const { isLoading } = storeToRefs(siteStore)

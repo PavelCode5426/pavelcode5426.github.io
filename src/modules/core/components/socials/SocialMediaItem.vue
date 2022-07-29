@@ -10,7 +10,7 @@ const { icon, name, link, color } = props.socialMedia
 
 <template>
   <li>
-    <a :href="link" :class="color">
+    <a :href="link" :class="color" target="_blank">
       <i :class="icon" />
     </a>
   </li>

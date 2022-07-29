@@ -3,6 +3,7 @@ import type Skill from '~/data/models/Skill'
 import type SocialMedia from '~/data/models/SocialMedia'
 import type Category from '~/data/models/Category'
 import Project from '~/data/models/Project'
+import Resume from '~/data/models/Resume'
 
 export const personalInformation: PersonalInformation = {
   name: 'Pavel Perez',
@@ -13,8 +14,7 @@ export const personalInformation: PersonalInformation = {
     'Desarrollador WordPress',
     'Freelancer',
   ],
-  presentationPhrase: 'Soy una persona organizada y muy motivada, puedo adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y promover valores como el compañerismo.',
-  // TODO CAMBIAR TEXTO SOBRE MI
+  presentationPhrase: '',
   aboutMe: 'Soy una persona organizada y muy motivada, puedo adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y promover valores como el compañerismo.',
   email: 'perezpavel5426@gmail.com',
   phone: '+53 54266836',
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     'Rafael Castillo',
     'Diciembre 2020',
     'https://www.familia-velazquez.com',
-    '...',
+    '',
   ),
   new Project(
     [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[4]],
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     undefined,
     'Noviembre 2021',
     undefined,
-    '...',
+    '',
   ),
   new Project(
     [projectCategories[0], projectCategories[5]],
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     undefined,
     'Mayo 2022',
     'https://www.staminainvestment.com',
-    '...',
+    '',
   ),
   new Project(
     [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[3]],
@@ -92,7 +92,19 @@ export const projects: Project[] = [
     'Rafael Castillo',
     'Enero 2022',
     'https://www.xprobots.com',
-    '...',
+    '',
   ),
 
+]
+
+export const educationResume: Resume[] = [
+  new Resume(
+    'Universidad Tecnologica de la Habana Jose Antonio Echeverria',
+    'CUJAE',
+    '2018 - Presente',
+    '',
+  ),
+]
+
+export const experienceResume: Resume[] = [
 ]

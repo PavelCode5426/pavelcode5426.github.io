@@ -1,5 +1,5 @@
 <script setup lang="ts">
-interface Props {
+interface SectionContainerProps {
   title: {
     type: String
     required: false
@@ -10,7 +10,7 @@ interface Props {
   }
 }
 
-defineProps<Props>()
+defineProps<SectionContainerProps>()
 </script>
 
 <template>
@@ -21,7 +21,7 @@ defineProps<Props>()
           <div class="heading_s1 heading_light animation" data-animation="fadeInUp" data-animation-delay="0.02s">
             <h2>{{ title }}</h2>
           </div>
-          <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s">
+          <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.02s">
             {{ description }}
           </p>
         </div>

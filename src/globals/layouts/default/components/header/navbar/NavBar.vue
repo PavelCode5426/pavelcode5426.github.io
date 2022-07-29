@@ -7,11 +7,11 @@
     <ul class="navbar-nav">
       <nav-link name="Inicio" href="#home" />
       <nav-link name="Sobre mi" href="#about" />
-      <nav-link name="Experiencia" href="#skill" />
+      <nav-link name="Habilidades" href="#skill" />
       <nav-link name="Portafolio" href="#portofolio" />
-      <!--      <nav-link name="Resumen" href="#resumen" /> -->
+      <nav-link name="Resumen" href="#resume" />
 
-      <nav-dropdown-link name="Idioma">
+      <nav-dropdown-link name="Idiomas">
         <nav-link name="Español" />
         <nav-link name="English" />
       </nav-dropdown-link>
