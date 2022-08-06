@@ -8,8 +8,7 @@ export class ThumbnailConverterImage {
   }
 
   protected generateThumbnailFormat(urlImg: string): string {
-    const extensionStart = urlImg.lastIndexOf('.')
-    const urlThumnail = `${urlImg.substring(0, extensionStart)}-small${urlImg.substring(extensionStart)}`
+    const urlThumnail = urlImg.replace('.', '-small.')
     return urlThumnail
   }
 }

@@ -144,4 +144,23 @@ export default defineConfig({
       inline: ['@vue', '@vueuse', 'vue-demi'],
     },
   },
+
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: (output) => {
+          const { name } = output
+          let result: string | undefined = 'assets/[name].[ext]'
+
+          const searchString = 'public/projects'
+          const startIn: number | undefined = name?.lastIndexOf(searchString)
+          if (startIn && startIn > -1)
+            result = `${name?.substring(startIn + 7)}`
+          return result
+        },
+      },
+    },
+  },
 })

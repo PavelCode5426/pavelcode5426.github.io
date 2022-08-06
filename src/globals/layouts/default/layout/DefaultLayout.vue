@@ -7,7 +7,8 @@ const siteStore = SiteStore()
 const { isLoading } = storeToRefs(siteStore)
 
 onMounted(() => {
-  window.addEventListener('load', () => setTimeout(() => isLoading.value = false, 400))
+  window.addEventListener('load', () => isLoading.value = false)
+  // setTimeout(() => isLoading.value = false, 1000)
 })
 </script>
 

@@ -21,7 +21,7 @@ export default class Project {
 
     const folderInProjectDir: string = name.replace(' ', '-').toLowerCase()
     const projectPhotos: String[] = []
-    const allPhotos = import.meta.globEager('/**/projects/**/*.png')
+    const allPhotos = import.meta.globEager('/**/projects/**/*.*')
     Object.keys(allPhotos).forEach((item) => {
       if (item.includes(folderInProjectDir) && !item.includes('-small')) {
         let photoDir = allPhotos[item].default as string

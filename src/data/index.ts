@@ -17,7 +17,7 @@ export const personalInformation: PersonalInformation = {
   presentationPhrase: '',
   aboutMe: 'Soy un estudiante de Ingenieria de Software del Instituto Superior Politecnico Jose Antonio Echeverria. '
       + 'Durante estos años me preparé con las tecnologías de <strong>Desarrollo Web</strong>. '
-      + 'En mi práctica profesional, he desarrollado un sistema para la Gestion de la Cantera Joven de la Universidad. '
+      + 'En mi práctica profesional, desarrollé un sistema para la Gestion de la Cantera Joven de la Universidad. '
       + 'También trabajé como freelance para mejorar mis habilidades y experiencia. '
       + 'Mi objetivo es mantener un crecimiento continuo en mi vida profesional y conocimiento.',
   email: 'perezpavel5426@gmail.com',
