@@ -14,6 +14,7 @@ import Prism from 'markdown-it-prism'
 import VueTypeImports from 'vite-plugin-vue-type-imports'
 import { imagetools } from 'vite-imagetools'
 import LinkAttributes from 'markdown-it-link-attributes'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -94,7 +95,7 @@ export default defineConfig({
       manifest: {
         name: 'PavelCode',
         short_name: 'PavelCode',
-        theme_color: '#9e0000',
+        theme_color: '#121429',
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -127,6 +128,15 @@ export default defineConfig({
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
     imagetools(),
+
+    viteStaticCopy({
+      targets: [
+        {
+          src: './netlify.toml',
+          dest: './',
+        },
+      ],
+    }),
   ],
 
   // https://github.com/antfu/vite-ssg
@@ -147,20 +157,18 @@ export default defineConfig({
 
   build: {
     rollupOptions: {
-      output: {
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: (output) => {
-          const { name } = output
-          let result: string | undefined = 'assets/[name].[ext]'
-
-          const searchString = 'public/projects'
-          const startIn: number | undefined = name?.lastIndexOf(searchString)
-          if (startIn && startIn > -1)
-            result = `${name?.substring(startIn + 7)}`
-          return result
-        },
-      },
+      // output: {
+      //   assetFileNames: (output) => {
+      //     const { name } = output
+      //     let result: string | undefined = 'assets/[name].[ext]'
+      //
+      //     const searchString = 'public/projects'
+      //     const startIn: number | undefined = name?.lastIndexOf(searchString)
+      //     if (startIn && startIn > -1)
+      //       result = `${name?.substring(startIn + 7)}`
+      //     return result
+      //   },
+      // },
     },
   },
 })

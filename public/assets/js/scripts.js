@@ -214,6 +214,8 @@ PAGE JS
 				$grid_selectors.isotope('layout');
 			}, 300);
 		});
+
+		// $(document).ready(()=>$('.grid_filter > li').first().click())
 	});
 	
 	$('.grid_item .image_popup').on('click', function () {
@@ -425,5 +427,9 @@ PAGE JS
 		timelineContainers.mCustomScrollbar({
 
 		})
-	
+
+	jQuery('#portofolio').waypoint(function (){
+		$('.grid_filter > li').first().click();
+	});
+
 })(jQuery);

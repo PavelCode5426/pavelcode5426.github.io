@@ -73,6 +73,12 @@ export const projects: Project[] = [
     'Diciembre 2020',
     'https://www.familia-velazquez.com',
     '',
+    [
+      'projects/familia-velazquez/1.png',
+      'projects/familia-velazquez/2.png',
+      'projects/familia-velazquez/3.png',
+      'projects/familia-velazquez/4.png',
+    ],
   ),
   new Project(
     [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[4]],
@@ -81,6 +87,13 @@ export const projects: Project[] = [
     'Noviembre 2021',
     undefined,
     '',
+    [
+      'projects/frateli/1.png',
+      'projects/frateli/2.png',
+      'projects/frateli/3.png',
+      'projects/frateli/4.png',
+      'projects/frateli/5.png',
+    ],
   ),
   new Project(
     [projectCategories[0], projectCategories[5]],
@@ -89,6 +102,13 @@ export const projects: Project[] = [
     'Mayo 2022',
     'https://www.staminainvestment.com',
     '',
+    [
+      'projects/stamina-investments/1.png',
+      'projects/stamina-investments/2.png',
+      'projects/stamina-investments/3.png',
+      'projects/stamina-investments/4.png',
+      'projects/stamina-investments/5.png',
+    ],
   ),
   new Project(
     [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[3]],
@@ -97,6 +117,12 @@ export const projects: Project[] = [
     'Enero 2022',
     'https://www.xprobots.com',
     '',
+    [
+      'projects/xprobots/1.png',
+      'projects/xprobots/2.png',
+      'projects/xprobots/3.png',
+      'projects/xprobots/4.png',
+    ],
   ),
 
 ]
