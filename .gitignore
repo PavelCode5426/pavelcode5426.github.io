@@ -2,8 +2,8 @@
 .vite-ssg-dist
 .vite-ssg-temp
 *.local
-dist
-dist-ssr
+#dist
+#dist-ssr
 node_modules
 .idea
 .history
