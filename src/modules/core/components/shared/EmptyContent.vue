@@ -1,5 +1,5 @@
 <template>
   <p class="text-white text-center">
-    Sin contendio para mostrar
+    Sin contenido para mostrar
   </p>
 </template>

@@ -23,7 +23,7 @@ export const personalInformation: PersonalInformation = {
   email: 'perezpavel5426@gmail.com',
   phone: '+53 54266836',
   birthdate: '21 de Diciembre de 1999',
-  cvLink: '/cv/Curriculum%20Vitae%20Pavel%20Perez%20Gonzalez.doc',
+  cvLink: 'https://docs.google.com/document/d/13myiTaByE0lY6vbWFJ1hRm5QJjkYq30pTx2oXRDr0-U',
 }
 
 export const skills: Skill[] = [

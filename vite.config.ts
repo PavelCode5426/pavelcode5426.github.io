@@ -157,18 +157,18 @@ export default defineConfig({
 
   build: {
     rollupOptions: {
-      // output: {
-      //   assetFileNames: (output) => {
-      //     const { name } = output
-      //     let result: string | undefined = 'assets/[name].[ext]'
-      //
-      //     const searchString = 'public/projects'
-      //     const startIn: number | undefined = name?.lastIndexOf(searchString)
-      //     if (startIn && startIn > -1)
-      //       result = `${name?.substring(startIn + 7)}`
-      //     return result
-      //   },
-      // },
+      output: {
+        assetFileNames: (output) => {
+          const { name } = output
+          let result: string | undefined = 'assets/[name].[ext]'
+
+          const searchString = 'public/projects'
+          const startIn: number | undefined = name?.lastIndexOf(searchString)
+          if (startIn && startIn > -1)
+            result = `${name?.substring(startIn + 7)}`
+          return result
+        },
+      },
     },
   },
 })
