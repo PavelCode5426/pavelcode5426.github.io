@@ -16,10 +16,10 @@ export const personalInformation: PersonalInformation = {
   ],
   presentationPhrase: '',
   aboutMe: 'Soy un estudiante de Ingenieria de Software del Instituto Superior Politecnico Jose Antonio Echeverria. '
-      + 'Durante estos años me preparé con las tecnologías de <strong>Desarrollo Web</strong>. '
-      + 'En mi práctica profesional, desarrollé un sistema para la Gestion de la Cantera Joven de la Universidad. '
-      + 'También trabajé como freelance para mejorar mis habilidades y experiencia. '
-      + 'Mi objetivo es mantener un crecimiento continuo en mi vida profesional y conocimiento.',
+        + 'Durante estos años me preparé con las tecnologías de <strong>Desarrollo Web</strong>. '
+        + 'En mi práctica profesional, desarrollé un sistema para la Gestion de la Cantera Joven de la Universidad. '
+        + 'También trabajé como freelance para mejorar mis habilidades y experiencia. '
+        + 'Mi objetivo es mantener un crecimiento continuo en mi vida profesional y conocimiento.',
   email: 'perezpavel5426@gmail.com',
   phone: '+53 54266836',
   birthdate: '21 de Diciembre de 1999',
@@ -39,6 +39,7 @@ export const skills: Skill[] = [
   { name: 'TypeScript', percent: 80 },
   { name: 'Laravel', percent: 85 },
   { name: 'Flask', percent: 70 },
+  { name: 'Django', percent: 80 },
   { name: 'Django Rest Framework', percent: 80 },
   { name: 'WordPress', percent: 80 },
   { name: 'ASP.NET', percent: 60 },
@@ -47,6 +48,9 @@ export const skills: Skill[] = [
   { name: 'jQuery', percent: 75 },
   { name: 'Git', percent: 75 },
   { name: 'REST Services', percent: 90 },
+  { name: 'Docker', percent: 60 },
+  { name: 'Cypress', percent: 80 },
+
 ]
 
 export const socialMedias: SocialMedia[] = [
@@ -57,17 +61,27 @@ export const socialMedias: SocialMedia[] = [
 ]
 
 export const projectCategories: Category[] = [
-  { id: 'backend', name: 'Backend' },
-  { id: 'frontend', name: 'Frontend' },
-  { id: 'wordpress', name: 'WordPress' },
-  { id: 'woocommerce', name: 'Woocommerce' },
-  { id: 'elearning', name: 'E-Learning' },
-  { id: 'laravel', name: 'Laravel' },
+  // { id: 'backend', name: 'Backend' },
+  // { id: 'frontend', name: 'Frontend' },
+  // { id: 'wordpress', name: 'WordPress' },
+  // { id: 'woocommerce', name: 'Woocommerce' },
+  // { id: 'laravel', name: 'Laravel' },
+  // { id: 'django', name: 'Django' },
+  { id: 'ecommerce', name: 'e-Commerce' },
+  { id: 'elearning', name: 'e-Learning' },
+  { id: 'investment-plataform', name: 'Investment Platform' },
 ]
 
 export const projects: Project[] = [
   new Project(
-    [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[3]],
+    [
+      // projectCategories[0],
+      // projectCategories[1],
+      // projectCategories[2],
+      // projectCategories[3],
+      // projectCategories[7]
+      projectCategories[0],
+    ],
     'Familia Velazquez',
     'Rafael Castillo',
     'Diciembre 2020',
@@ -81,7 +95,14 @@ export const projects: Project[] = [
     ],
   ),
   new Project(
-    [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[4]],
+    [
+      // projectCategories[0],
+      // projectCategories[1],
+      // projectCategories[2],
+      // projectCategories[6]
+      projectCategories[0],
+      projectCategories[1],
+    ],
     'Frateli',
     undefined,
     'Noviembre 2021',
@@ -96,7 +117,12 @@ export const projects: Project[] = [
     ],
   ),
   new Project(
-    [projectCategories[0], projectCategories[5]],
+    [
+      // projectCategories[0],
+      // projectCategories[4]
+      projectCategories[0],
+      projectCategories[2],
+    ],
     'Stamina Investments',
     undefined,
     'Mayo 2022',
@@ -111,7 +137,15 @@ export const projects: Project[] = [
     ],
   ),
   new Project(
-    [projectCategories[0], projectCategories[1], projectCategories[2], projectCategories[3]],
+    [
+      // projectCategories[0],
+      // projectCategories[1],
+      // projectCategories[2],
+      // projectCategories[3],
+      // projectCategories[7]
+      projectCategories[0],
+
+    ],
     'Xprobots',
     'Rafael Castillo',
     'Enero 2022',
@@ -124,7 +158,57 @@ export const projects: Project[] = [
       'projects/xprobots/4.png',
     ],
   ),
+  new Project(
+    [
+      // projectCategories[0],
+      // projectCategories[1],
+      // projectCategories[5],
+      // projectCategories[7]
+      projectCategories[0],
 
+    ],
+    'Vralex Airline Services',
+    'Vralex Company',
+    'Septiembre 2022',
+    'https://tickets.vralex.com',
+    '',
+    [
+      'projects/vralex-airline-services/1.png',
+      'projects/vralex-airline-services/2.png',
+      'projects/vralex-airline-services/3.png',
+      'projects/vralex-airline-services/4.png',
+      'projects/vralex-airline-services/5.png',
+      'projects/vralex-airline-services/6.png',
+      'projects/vralex-airline-services/7.png',
+      'projects/vralex-airline-services/8.png',
+      'projects/vralex-airline-services/9.png',
+      'projects/vralex-airline-services/10.png',
+      'projects/vralex-airline-services/11.png',
+    ],
+  ),
+  new Project(
+    [
+      // projectCategories[0],
+      // projectCategories[1],
+      // projectCategories[2],
+      // projectCategories[3],
+      // projectCategories[7]
+      projectCategories[0],
+
+    ],
+    'Que Pijo',
+    undefined,
+    'Septiembre 2022',
+    'https://quepijo.com',
+    '',
+    [
+      'projects/quepijo/1.png',
+      'projects/quepijo/2.png',
+      'projects/quepijo/6.png',
+      'projects/quepijo/3.png',
+      'projects/quepijo/5.png',
+    ],
+  ),
 ]
 
 export const educationResume: Resume[] = [

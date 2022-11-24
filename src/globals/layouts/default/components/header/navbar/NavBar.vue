@@ -11,10 +11,10 @@
       <nav-link name="Portafolio" href="#portofolio" />
       <nav-link name="Resumen" href="#resume" />
 
-      <nav-dropdown-link name="Idiomas">
-        <nav-link name="Español" />
-        <nav-link name="English" />
-      </nav-dropdown-link>
+      <!--      <nav-dropdown-link name="Idiomas"> -->
+      <!--        <nav-link name="Español" /> -->
+      <!--        <nav-link name="English" /> -->
+      <!--      </nav-dropdown-link> -->
     </ul>
     <div class="bottom_content">
       <contact-info />
