@@ -1,19 +1,20 @@
 <script setup lang="ts">
+import { defineEmits } from 'vue-demi'
 import type Category from '~/data/models/Category'
 
 interface CategoryProps {
   category: Category
-  isCurrent: { type: Boolean;default: false }
+  isCurrent: boolean
 }
 
-const props = defineProps<CategoryProps>()
+const { category, isCurrent = false } = defineProps<CategoryProps>()
+const emit = defineEmits<{
+  (e: 'click', item: Category): void
+}>()
 
-const { id, name } = props.category
-const literalID = id === '*' ? id : `.${id}`
+const { id, name } = category
 </script>
 
 <template>
-  <li>
-    <a href="#" class="mx-1" :class="{ current: isCurrent }" :data-filter="literalID">{{ name }}</a>
-  </li>
+  <Button class="mx-1 btn-sm" :outline="!isCurrent" :text="name" @click="emit('click', category)" />
 </template>

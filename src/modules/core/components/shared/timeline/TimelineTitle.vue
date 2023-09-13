@@ -1,13 +1,7 @@
 <script setup lang="ts">
-interface TimelineTitleProps {
-  title: String
-  icon: {
-    type: String
-    required: false
-  }
-}
+import type { TimelineTitleProps } from '~/modules/core/components/shared/timeline/props'
 
-const props = defineProps<TimelineTitleProps>()
+const { icon, title } = defineProps<TimelineTitleProps>()
 </script>
 
 <template>

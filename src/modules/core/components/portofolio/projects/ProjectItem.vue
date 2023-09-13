@@ -7,21 +7,20 @@ interface ProjectItemProps {
 }
 
 const props = defineProps<ProjectItemProps>()
-const emit = defineEmits(['onPreviewClick'])
 const { categories, name, photos } = props.project
 
 const { asClass: literalCategoriesClass, asNames: literalCategoriesNames } = literalCategories(categories)
 </script>
 
 <template>
-  <li class="grid_item" :class="literalCategoriesClass">
-    <div class="portfolio_item link-cursor" @click="emit('onPreviewClick')">
+  <li class="col-md-6" :class="literalCategoriesClass">
+    <div class="portfolio_item link-cursor">
       <a class="image_link">
-        <lazy-img :data-src="photos[0]" />
+        <lazy-img :data-src="photos[0]" style="height: 250px;width: 100%;aspect-ratio: 16/9" />
       </a>
       <div class="portfolio_content">
-        <h5>{{ name }}</h5>
-        <p>{{ literalCategoriesNames }}</p>
+        <h5 v-text="name" />
+        <p v-text="literalCategoriesNames" />
       </div>
     </div>
   </li>

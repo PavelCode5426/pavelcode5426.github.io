@@ -5,6 +5,12 @@ const { cvLink } = personalInformation
 </script>
 
 <template>
-  <a class="btn btn-outline-default text-white btn-radius animation" download :href="cvLink" data-animation="fadeInLeft" data-animation-delay="0.05s">
-    <i class="ion-android-download" /> Descargar CV</a>
+  <a download :href="cvLink">
+    <Button
+      data-animation="fadeInLeft"
+      data-animation-delay="0.05s"
+      icon="ion-android-download"
+      text="Descargar CV"
+    />
+  </a>
 </template>

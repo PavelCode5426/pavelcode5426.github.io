@@ -3,8 +3,6 @@
     <h5>Informacion Básica</h5>
   </div>
   <ul class="profile_info_style2 list_none">
-    <slot>
-      Sin Informacion
-    </slot>
+    <slot>Sin Informacion</slot>
   </ul>
 </template>

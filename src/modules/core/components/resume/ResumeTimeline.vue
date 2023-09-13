@@ -1,20 +1,7 @@
 <script setup lang="ts">
-import type Resume from '~/data/models/Resume'
+import type { ResumeTimelineProps } from '~/modules/core/components/resume/props'
 
-interface ResumeTimelineProps {
-  title: String
-  description: {
-    type: String
-    required: false
-  }
-  icon: {
-    type: String
-    required: false
-  }
-  resumens: Resume[]
-}
-
-const props = defineProps<ResumeTimelineProps>()
+const { title, description, icon, resumens } = defineProps<ResumeTimelineProps>()
 </script>
 
 <template>

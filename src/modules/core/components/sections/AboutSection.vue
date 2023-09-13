@@ -19,9 +19,9 @@ import { personalInformation } from '~/data'
           <p class="text-white text-justify" v-html="personalInformation.aboutMe" />
           <hr>
           <information-list>
-            <information-item label="Teléfono" :value="personalInformation.phone" />
-            <information-item label="Correo" :value="personalInformation.email" />
-            <information-item label="Fecha de Nacimiento" :value="personalInformation.birthdate" />
+            <information-item title="Teléfono" :text="personalInformation.phone" />
+            <information-item title="Correo" :text="personalInformation.email" />
+            <information-item title="Fecha de Nacimiento" :text="personalInformation.birthdate" />
           </information-list>
           <br>
           <social-medias />

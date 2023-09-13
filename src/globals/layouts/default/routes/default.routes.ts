@@ -2,7 +2,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import { getLayoutRoutes } from '~/helpers/router.load'
 
 const requireModules = import.meta.globEager('/src/modules/**/*.routes.ts')
-const childrens = getLayoutRoutes('Default', requireModules)
+const childrens = getLayoutRoutes('default', requireModules)
 
 const routes: RouteRecordRaw[] = [
   {

@@ -2,6 +2,7 @@
 import { storeToRefs } from 'pinia'
 import SiteStore from '~/globals/stores/site.store'
 import Footer from '~/globals/layouts/default/components/footer/Footer.vue'
+import Preloader from '~/globals/layouts/default/components/Preloader.vue'
 
 const siteStore = SiteStore()
 const { isLoading } = storeToRefs(siteStore)
@@ -14,10 +15,10 @@ onMounted(() => {
 
 <template>
   <transition>
-    <loading-page v-if="isLoading" />
+    <Preloader v-if="isLoading" />
   </transition>
   <Header />
-  <page-content />
+  <PageContent />
 </template>
 
 <style>

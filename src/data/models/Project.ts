@@ -2,14 +2,14 @@ import type Category from '~/data/models/Category'
 
 export default class Project {
   public categories: Category[]
-  public name: String
-  public clientName: String | undefined
-  public photos: String[]
-  public date: String
-  public link: String | undefined
-  public text: String
+  public name: string
+  public clientName: string | undefined
+  public photos: string[]
+  public date: string
+  public link: string | undefined
+  public text: string
 
-  constructor(categories: Category[], name: String, clientName: String | undefined, date: String, link: String | undefined, text: String, photos: String[] = []) {
+  constructor(categories: Category[], name: string, clientName: string | undefined, date: string, link: string | undefined, text: string, photos: string[] = []) {
     this.categories = categories
     this.name = name
     this.clientName = clientName
@@ -21,7 +21,7 @@ export default class Project {
 
     if (!photos.length) {
       const folderInProjectDir: string = name.replace(' ', '-').toLowerCase()
-      const projectPhotos: String[] = []
+      const projectPhotos: string[] = []
       const allPhotos = import.meta.globEager('/**/projects/**/*.*')
       Object.keys(allPhotos).forEach((item) => {
         if (item.includes(folderInProjectDir) && !item.includes('-small') && !item.includes('dist')) {

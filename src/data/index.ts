@@ -15,11 +15,8 @@ export const personalInformation: PersonalInformation = {
     'Freelancer',
   ],
   presentationPhrase: '',
-  aboutMe: 'Soy un estudiante de Ingenieria de Software del Instituto Superior Politecnico Jose Antonio Echeverria. '
-        + 'Durante estos años me preparé con las tecnologías de <strong>Desarrollo Web</strong>. '
-        + 'En mi práctica profesional, desarrollé un sistema para la Gestion de la Cantera Joven de la Universidad. '
-        + 'También trabajé como freelance para mejorar mis habilidades y experiencia. '
-        + 'Mi objetivo es mantener un crecimiento continuo en mi vida profesional y conocimiento.',
+  aboutMe: 'Soy un apasionado graduado de Ingeniería de Software en el Instituto Superior Politécnico José Antonio Echeverría. Durante mi formación académica, me he enfocado en adquirir habilidades en el desarrollo de aplicaciones web. Durante mi práctica profesional, tuve la oportunidad de trabajar en el desarrollo de un sistema para la gestión de la Cantera Joven de la Universidad, lo cual me permitió aplicar mis conocimientos y adquirir experiencia práctica en el campo.'
+        + 'Además, he trabajado como freelance, lo que ha brindado la oportunidad de mejorar mis habilidades técnicas y desarrollar proyectos en los que he aplicado las mejores prácticas de desarrollo de software. Siempre busco mantenerme actualizado y en constante aprendizaje, ya que considero que el crecimiento profesional y el conocimiento continuo son fundamentales en el mundo de la ingeniería de software. Mi objetivo es seguir desarrollando software de alta calidad, aplicando las mejores prácticas y buscando la excelencia en cada proyecto en el que participe.',
   email: 'perezpavel5426@gmail.com',
   phone: '+53 54266836',
   birthdate: '21 de Diciembre de 1999',
@@ -40,6 +37,7 @@ export const skills: Skill[] = [
   { name: 'Laravel', percent: 85 },
   { name: 'Flask', percent: 70 },
   { name: 'Django', percent: 80 },
+  { name: 'PyQt', percent: 60 },
   { name: 'Django Rest Framework', percent: 80 },
   { name: 'WordPress', percent: 80 },
   { name: 'ASP.NET', percent: 60 },
@@ -48,6 +46,7 @@ export const skills: Skill[] = [
   { name: 'jQuery', percent: 75 },
   { name: 'Git', percent: 75 },
   { name: 'REST Services', percent: 90 },
+  { name: 'Machine Learning', percent: 40 },
   { name: 'Docker', percent: 60 },
   { name: 'Cypress', percent: 80 },
 
@@ -70,6 +69,7 @@ export const projectCategories: Category[] = [
   { id: 'ecommerce', name: 'e-Commerce' },
   { id: 'elearning', name: 'e-Learning' },
   { id: 'investment-plataform', name: 'Investment Platform' },
+  { id: 'sports', name: 'Sports' },
 ]
 
 export const projects: Project[] = [
@@ -88,10 +88,10 @@ export const projects: Project[] = [
     'https://www.familia-velazquez.com',
     '',
     [
-      'projects/familia-velazquez/1.png',
-      'projects/familia-velazquez/2.png',
-      'projects/familia-velazquez/3.png',
-      'projects/familia-velazquez/4.png',
+      'projects/familia-velazquez/1.jpg',
+      'projects/familia-velazquez/2.jpg',
+      'projects/familia-velazquez/3.jpg',
+      'projects/familia-velazquez/4.jpg',
     ],
   ),
   new Project(
@@ -109,11 +109,11 @@ export const projects: Project[] = [
     undefined,
     '',
     [
-      'projects/frateli/1.png',
-      'projects/frateli/2.png',
-      'projects/frateli/3.png',
-      'projects/frateli/4.png',
-      'projects/frateli/5.png',
+      'projects/frateli/1.jpg',
+      'projects/frateli/2.jpg',
+      'projects/frateli/3.jpg',
+      'projects/frateli/4.jpg',
+      'projects/frateli/5.jpg',
     ],
   ),
   new Project(
@@ -129,11 +129,11 @@ export const projects: Project[] = [
     'https://www.staminainvestment.com',
     '',
     [
-      'projects/stamina-investments/1.png',
-      'projects/stamina-investments/2.png',
-      'projects/stamina-investments/3.png',
-      'projects/stamina-investments/4.png',
-      'projects/stamina-investments/5.png',
+      'projects/stamina-investments/1.jpg',
+      'projects/stamina-investments/2.jpg',
+      'projects/stamina-investments/3.jpg',
+      'projects/stamina-investments/4.jpg',
+      'projects/stamina-investments/5.jpg',
     ],
   ),
   new Project(
@@ -152,10 +152,10 @@ export const projects: Project[] = [
     'https://www.xprobots.com',
     '',
     [
-      'projects/xprobots/1.png',
-      'projects/xprobots/2.png',
-      'projects/xprobots/3.png',
-      'projects/xprobots/4.png',
+      'projects/xprobots/1.jpg',
+      'projects/xprobots/2.jpg',
+      'projects/xprobots/3.jpg',
+      'projects/xprobots/4.jpg',
     ],
   ),
   new Project(
@@ -173,17 +173,17 @@ export const projects: Project[] = [
     'https://tickets.vralex.com',
     '',
     [
-      'projects/vralex-airline-services/1.png',
-      'projects/vralex-airline-services/2.png',
-      'projects/vralex-airline-services/3.png',
-      'projects/vralex-airline-services/4.png',
-      'projects/vralex-airline-services/5.png',
-      'projects/vralex-airline-services/6.png',
-      'projects/vralex-airline-services/7.png',
-      'projects/vralex-airline-services/8.png',
-      'projects/vralex-airline-services/9.png',
-      'projects/vralex-airline-services/10.png',
-      'projects/vralex-airline-services/11.png',
+      'projects/vralex-airline-services/1.jpg',
+      'projects/vralex-airline-services/2.jpg',
+      'projects/vralex-airline-services/3.jpg',
+      'projects/vralex-airline-services/4.jpg',
+      'projects/vralex-airline-services/5.jpg',
+      'projects/vralex-airline-services/6.jpg',
+      'projects/vralex-airline-services/7.jpg',
+      'projects/vralex-airline-services/8.jpg',
+      'projects/vralex-airline-services/9.jpg',
+      'projects/vralex-airline-services/10.jpg',
+      'projects/vralex-airline-services/11.jpg',
     ],
   ),
   new Project(
@@ -202,12 +202,37 @@ export const projects: Project[] = [
     'https://quepijo.com',
     '',
     [
-      'projects/quepijo/1.png',
-      'projects/quepijo/2.png',
-      'projects/quepijo/6.png',
-      'projects/quepijo/3.png',
-      'projects/quepijo/5.png',
+      'projects/quepijo/1.jpg',
+      'projects/quepijo/2.jpg',
+      'projects/quepijo/6.jpg',
+      'projects/quepijo/3.jpg',
+      'projects/quepijo/5.jpg',
     ],
+  ),
+  new Project([
+    projectCategories[3],
+  ],
+  'Decalixto',
+  'Nestor Calixto',
+  'Septiembre 2023',
+  'https://dev.decalixto.com',
+  '',
+  [
+    'projects/decalixto/1.jpg',
+    'projects/decalixto/2.jpg',
+    'projects/decalixto/3.jpg',
+    'projects/decalixto/4.jpg',
+    'projects/decalixto/5.jpg',
+    'projects/decalixto/6.jpg',
+    'projects/decalixto/7.jpg',
+    'projects/decalixto/8.jpg',
+    'projects/decalixto/9.jpg',
+    'projects/decalixto/10.jpg',
+    'projects/decalixto/11.jpg',
+    'projects/decalixto/12.jpg',
+    'projects/decalixto/13.jpg',
+    'projects/decalixto/14.jpg',
+  ],
   ),
 ]
 
@@ -215,10 +240,13 @@ export const educationResume: Resume[] = [
   new Resume(
     'Universidad Tecnologica de la Habana Jose Antonio Echeverria',
     'CUJAE',
-    '2018 - Presente',
+    '2018 - 2023',
     '',
   ),
+  new Resume('Curso de Python Intermedio', 'DESOFT', '2023', ''),
+  new Resume('Curso de Machine Learning', 'DESOFT', '2023', ''),
 ]
 
 export const experienceResume: Resume[] = [
+  new Resume('Aerovaradero S.A', '', '2018 - Presente', ''),
 ]

@@ -1,19 +1,13 @@
 <script setup lang="ts">
-interface Props {
-  label: {
-    type: String
-  }
-  value: {
-    type: String
-  }
-}
-
-const props = defineProps<Props>()
+const props = defineProps<{
+  title: string
+  text: string
+}>()
 </script>
 
 <template>
   <li>
-    <span class="title">{{ label }}</span>
-    <p>{{ value }}</p>
+    <span class="title" v-text="title" />
+    <p v-text="text" />
   </li>
 </template>

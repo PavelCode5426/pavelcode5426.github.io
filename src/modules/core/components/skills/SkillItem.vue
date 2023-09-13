@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface SkillProps {
-  name: { type: string }
-  percent: { type: number }
+  name: string
+  percent: number
 }
 
 const { name, percent } = defineProps<SkillProps>()
@@ -22,15 +22,18 @@ else
   <div class="skill_box box_dark text_white">
     <div class="skill_content pr_style1">
       <div class="progrees_bar_text">
-        <b>{{ name }}</b>
+        <b v-text="name" />
         <br>
-        <span class="text-sm">{{ literalLevel }}</span>
+        <span class="text-sm" v-text="literalLevel" />
       </div>
       <div class="progress">
         <div class="count_pr">
           <span class="counter">{{ percent }}</span>%
         </div>
-        <div class="progress-bar d-block" role="progressbar" :aria-valuenow="percent" aria-valuemin="0" aria-valuemax="100" :style="{ width: `${percent}%` }" />
+        <div
+          class="progress-bar d-block" role="progressbar" :aria-valuenow="percent" aria-valuemin="0"
+          aria-valuemax="100" :style="{ width: `${percent}%` }"
+        />
       </div>
     </div>
   </div>

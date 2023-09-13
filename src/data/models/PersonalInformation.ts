@@ -1,16 +1,16 @@
 export default class PersonalInformation {
-  public name: String
-  public photos: [String, String] // PORTADA Y SOBRE MI
-  public professions: String[]
-  public presentationPhrase: String
-  public aboutMe: String
-  public cvLink: String
+  public name: string
+  public photos: [string, string] // PORTADA Y SOBRE MI
+  public professions: string[]
+  public presentationPhrase: string
+  public aboutMe: string
+  public cvLink: string
 
-  public email: String
-  public phone: String
-  public birthdate: String
+  public email: string
+  public phone: string
+  public birthdate: string
 
-  constructor(name: String, photos: [String, String], professions: String[], presentationPhrase: String, aboutMe: String, cvLink: String, email: String, phone: String, birthdate: String) {
+  constructor(name: string, photos: [string, string], professions: string[], presentationPhrase: string, aboutMe: string, cvLink: string, email: string, phone: string, birthdate: string) {
     this.name = name
     this.photos = photos
     this.professions = professions

@@ -1,5 +1,3 @@
 <template>
-  <p class="text-white text-center">
-    Sin contenido para mostrar
-  </p>
+  <p class="text-white text-center" v-text="'Sin contenido para mostrar'" />
 </template>

@@ -16,6 +16,7 @@
   "dependencies": {
     "@vueuse/core": "^8.7.5",
     "@vueuse/head": "^0.7.6",
+    "element-plus": "^2.3.12",
     "lozad": "^1.16.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.14",

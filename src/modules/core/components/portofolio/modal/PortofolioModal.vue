@@ -1,14 +1,12 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <div class="modal fade">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content bg_black3 scroll_white">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-          <slot />
-        </div>
-      </div>
-    </div>
-  </div>
+  <el-dialog
+    class="bg_black3" width="70%" append-to-body center close-on-press-escape destroy-on-close
+    :close-on-click-modal="false"
+  >
+    <slot />
+  </el-dialog>
 </template>

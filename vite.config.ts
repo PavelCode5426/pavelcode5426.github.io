@@ -15,6 +15,7 @@ import VueTypeImports from 'vite-plugin-vue-type-imports'
 import { imagetools } from 'vite-imagetools'
 import LinkAttributes from 'markdown-it-link-attributes'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -57,6 +58,7 @@ export default defineConfig({
         'src/globals/config/store',
       ],
       vueTemplate: true,
+      resolvers: [ElementPlusResolver()],
     }),
 
     // https://github.com/antfu/unplugin-vue-components
@@ -67,6 +69,7 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'src/types/components.d.ts',
       dirs: 'src/',
+      resolvers: [ElementPlusResolver()],
     }),
 
     // https://github.com/antfu/vite-plugin-vue-markdown
@@ -143,7 +146,9 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
-    onFinished() { generateSitemap() },
+    onFinished() {
+      generateSitemap()
+    },
   },
 
   // https://github.com/vitest-dev/vitest
