@@ -4,7 +4,7 @@ import { personalInformation } from '~/data'
 
 <template>
   <div class="image_banner animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-    <lazy-img :data-src="personalInformation.photos[0]" />
+    <p-image :src="personalInformation.photos[0]" />
     <div class="circle_bg1">
       <span />
       <span />

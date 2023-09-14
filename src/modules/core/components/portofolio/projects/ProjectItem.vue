@@ -16,7 +16,7 @@ const { asClass: literalCategoriesClass, asNames: literalCategoriesNames } = lit
   <li class="col-md-6" :class="literalCategoriesClass">
     <div class="portfolio_item link-cursor">
       <a class="image_link">
-        <lazy-img :data-src="photos[0]" style="height: 250px;width: 100%;aspect-ratio: 16/9" />
+        <p-image :lazy="true" :src="photos[0]" style="height: 250px;width: 100%;aspect-ratio: 16/9" />
       </a>
       <div class="portfolio_content">
         <h5 v-text="name" />

@@ -17,7 +17,7 @@ function categorySelectedHandler(item: Category) {
   if (item.id === '*')
     projects.value = dataProjects
   else
-    projects.value = dataProjects.filter(project => project.categories.findIndex(i => i?.id === i.id) >= 0)
+    projects.value = dataProjects.filter(value => value.categories.some(value1 => value1.id === item.id))
 }
 </script>
 
@@ -33,9 +33,7 @@ function categorySelectedHandler(item: Category) {
     </div>
     <div class="row">
       <div class="col-md-12">
-        <transition-group>
-          <project-list :projects="projects" @preview="projectPreviewHandler" />
-        </transition-group>
+        <project-list :projects="projects" @preview="projectPreviewHandler" />
       </div>
     </div>
     <project-details-modal v-model="show" :project="selectedProject" @close="selectedProject = undefined" />

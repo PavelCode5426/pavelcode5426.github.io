@@ -16,8 +16,13 @@ const literalCategoriesNames = () => literalCategories(project.categories).asNam
     <div class="row">
       <div class="col-lg-8">
         <el-carousel :interval="4000" style="height: 100%">
-          <el-carousel-item v-for="photo in project.photos" :key="photo">
-            <lazy-img :data-src="photo" />
+          <el-carousel-item v-for="(photo, index) in project.photos" :key="index">
+            <p-image
+              :src="photo" :zoom-rate="1.2"
+              :preview-src-list="project.photos"
+              :initial-index="index"
+              preview-teleported
+            />
           </el-carousel-item>
         </el-carousel>
       </div>

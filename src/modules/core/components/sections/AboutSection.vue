@@ -7,7 +7,7 @@ import { personalInformation } from '~/data'
     <div class="row">
       <div class="col-md-5">
         <div class="about_img3 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-          <lazy-img :data-src="personalInformation.photos[1]" />
+          <p-image :lazy="true" :src="personalInformation.photos[1]" />
           <div class="border_shape2 shape_white" />
         </div>
       </div>
