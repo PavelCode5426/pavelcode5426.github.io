@@ -19,7 +19,7 @@ jobs:
       - name: Configure Node ⚙
         uses: actions/setup-node@v1
         with:
-          node-version: '18'
+          node-version: 'latest'
 
       - name: Install and Build 🔧
         run: |
