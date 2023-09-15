@@ -1,6 +1,7 @@
 <template>
   <div class="page-content">
-    <RouterView />
+    <!--    <RouterView /> -->
+    <HomePage />
     <Footer />
   </div>
 </template>

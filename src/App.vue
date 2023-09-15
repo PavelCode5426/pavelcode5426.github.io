@@ -22,5 +22,5 @@ useHead({
 
 <template>
   <!--  <router-view /> -->
-  <HomePage />
+  <DefaultLayout />
 </template>
