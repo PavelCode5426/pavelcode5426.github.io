@@ -138,6 +138,10 @@ export default defineConfig({
           src: './netlify.toml',
           dest: './',
         },
+        {
+          src: './htaccess',
+          dest: './',
+        },
       ],
     }),
   ],
