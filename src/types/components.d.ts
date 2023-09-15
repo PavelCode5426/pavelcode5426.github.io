@@ -31,7 +31,7 @@ declare module '@vue/runtime-core' {
     InformationItem: typeof import('./../modules/core/components/information/InformationItem.vue')['default']
     InformationList: typeof import('./../modules/core/components/information/InformationList.vue')['default']
     LazyImg: typeof import('./../globals/components/LazyImg.vue')['default']
-    Loader: typeof import('./../globals/layouts/default/components/Loader/Loader.vue')['default']
+    Loader: typeof import('./../globals/layouts/default/components/loader/Loader.vue')['default']
     NavBar: typeof import('./../globals/layouts/default/components/header/navbar/NavBar.vue')['default']
     NavBarLogo: typeof import('./../globals/layouts/default/components/header/navbar/NavBarLogo.vue')['default']
     NavDropdownLink: typeof import('./../globals/layouts/default/components/header/navbar/NavDropdownLink.vue')['default']

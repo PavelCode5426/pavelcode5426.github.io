@@ -2,6 +2,7 @@ import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
 import router from './globals/config/router'
 
+import 'element-plus/dist/index.css'
 import '../public/assets/css/theme-ui.css'
 import '../public/assets/css/animate.css'
 import '../public/assets/bootstrap/css/bootstrap.min.css'
